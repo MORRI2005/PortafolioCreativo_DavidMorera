@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border: 1px solid white;
+  max-width: 300px;
+}
+
+button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #020824, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: monospace;
+  color: white;
+}
+
+canvas {
+  border: 2px solid #3a3a3a;
+  background: #000;
+}
+
+#ui {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+button {
+  font-family: monospace;
+  font-size: 14px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2ecc71;
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #27ae60;
+}

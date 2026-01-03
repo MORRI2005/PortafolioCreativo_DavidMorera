@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  color: #eaeaea;
+  font-family: "Inter", system-ui, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.ui {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  max-width: 340px;
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ui h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.ui p {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #666;
+  color: #eee;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #fff;
+}
+
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #fff;
+}
