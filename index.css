@@ -67,6 +67,7 @@ body::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .obra-card {
@@ -137,5 +138,12 @@ body::before {
   pointer-events: none;
   background: #0b1026;
   display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: #8a90c2;
 }
 
