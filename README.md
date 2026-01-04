@@ -21,7 +21,7 @@ En esta obra el usuario interactua con una nebulosa, una nebulosa es una nube de
 Link de la obra: https://porfolio-creativo-david-morera-git-main-morri2005s-projects.vercel.app/sketches/nebula/index.html
 
 Cohete:
-En esta obra el usuario interactua con un cohete, el transporte fundamental para viajar al espacio es un cohete. El viaje en el espacio no es un camino lleno de rosas, a veces puede resultar muy peligroso viajar en este, es por ello que en esta obra el usuario toma el papel del capitan de un cohete el cual tiene que pasar por una nube de asteroides. El usuario tendra que pilotar la nave a partir de su voz.
+En esta obra el usuario interactua con un cohete, el transporte fundamental para viajar al espacio es un cohete. El viaje en el espacio no es un camino lleno de rosas, a veces puede resultar muy peligroso viajar en este, es por ello que en esta obra el usuario toma el papel del capitan de un cohete el cual tiene que pasar por una nube de asteroides. El usuario tendra que pilotar la nave a partir de su voz. Detro de la carpeta de rocket, hay una carpeta con las imagenes para jugar al juego.
 
 ![alt text](image-3.png)
 
