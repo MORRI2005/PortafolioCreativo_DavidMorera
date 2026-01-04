@@ -2,15 +2,12 @@ let systems = [];
 let currentSystem = null;
 let selectedPlanet = null;
 
-/* ---------- ESTRELLAS ---------- */
 let stars = [];
 
-/* ---------- GALAXIA ---------- */
 let galaxyAngle = 0;
 let galaxyArms = [];
 let numArms = 4;
 
-/* ---------- SONIDO ESCÁNER ---------- */
 let scanOsc;
 let scanActive = false;
 
@@ -20,7 +17,6 @@ function setup() {
   generateGalaxy();
   generateCentralGalaxy();
 
-  // Sonido
   scanOsc = new p5.Oscillator("sine");
   scanOsc.start();
   scanOsc.amp(0);
@@ -51,8 +47,6 @@ function draw() {
   }
 }
 
-/* ---------- ESTRELLAS ---------- */
-
 function generateStars() {
   stars = [];
   for (let i = 0; i < 700; i++) {
@@ -73,8 +67,6 @@ function drawStars() {
     ellipse(s.x, s.y, s.r);
   }
 }
-
-/* ---------- GALAXIA ---------- */
 
 function generateGalaxy() {
   systems = [];
@@ -98,8 +90,6 @@ function drawSystemHover() {
     }
   }
 }
-
-/* ---------- GALAXIA CENTRAL ---------- */
 
 function generateCentralGalaxy() {
   galaxyArms = [];
@@ -138,8 +128,6 @@ function drawCentralGalaxy() {
   pop();
 }
 
-/* ---------- SISTEMA ---------- */
-
 function drawSystem(system) {
   system.drawDetailed();
 }
@@ -156,8 +144,6 @@ function drawPlanetHover(system) {
     }
   }
 }
-
-/* ---------- INTERACCIÓN ---------- */
 
 function mousePressed() {
   userStartAudio();
@@ -186,8 +172,6 @@ function mousePressed() {
   }
 }
 
-/* ---------- SONIDO ---------- */
-
 function startScanSound(planet) {
   let freq = map(planet.habitability, 0, 100, 120, 600);
   if (planet.event) freq += 150;
@@ -202,8 +186,6 @@ function stopScanSound() {
   scanOsc.amp(0, 0.5);
   scanActive = false;
 }
-
-/* ---------- CLASES ---------- */
 
 class SolarSystem {
   constructor(x, y) {
@@ -333,8 +315,6 @@ class Moon {
   }
 }
 
-/* ---------- UI ESCÁNER ---------- */
-
 function showPlanetScan(p) {
   let bar =
     "█".repeat(floor(p.habitability / 10)) +
@@ -367,8 +347,6 @@ ${eventText}
 Habitabilidad:
 ${bar} ${p.habitability}%`;
 }
-
-/* ---------- UTIL ---------- */
 
 function randomName() {
   let s = ["ka", "zu", "an", "to", "ra", "mi", "xe", "lo", "un"];
